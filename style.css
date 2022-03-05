@@ -391,6 +391,7 @@ button.white {
 footer {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 footer .col-2,
 .col-3 {
@@ -472,7 +473,33 @@ footer img {
   #newsletter .form {
     width: 70%;
   }
-  @media only screen and (max-width: 799px) {
-  
+  @media only screen and (max-width: 499px) {
+    h2 {
+      font-size: 32px;
+      line-height: 44px;
+      color: #222;
+    }
+    h1 {
+      font-size: 42px;
+      line-height: 45px;
+      color: #222;
+    }
+    p {
+      font-size: 14px;
+      color: #465b52;
+      margin: 15px 0 20px 0;
+    }
+    .section-p1 {
+      padding: 10px 20px;
+    }
+    #banner3 {
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      padding: 0 40px;
+    }
+    #newsletter .form {
+      width: 100%;
+    }
   }
 }

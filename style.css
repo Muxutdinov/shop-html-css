@@ -445,7 +445,7 @@ footer img {
 }
 
 /* Shop page */
-#shop-hero{
+#shop-hero {
   background-image: url(./imges/banner/b1.jpg);
   width: 100%;
   height: 40vh;
@@ -454,8 +454,90 @@ footer img {
   justify-content: center;
   align-items: center;
 }
-#shop-hero h2,#shop-hero p{
+#shop-hero h2,
+#shop-hero p {
   color: #fff;
+}
+
+#pagination {
+  text-align: center;
+}
+
+#pagination a {
+  text-decoration: none;
+  background-color: #088178;
+  padding: 15px 20px;
+  color: #fff;
+  border-radius: 4px;
+}
+#pagination a i {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* Single page */
+
+#single-product {
+  margin-top: 30px;
+  display: flex;
+}
+#single-product .single-product-image-wrapper {
+  width: 40%;
+}
+#single-product .single-product-image-group {
+  display: flex;
+  width: 100%;
+}
+#single-product .single-product-image-wrapper img {
+  width: 100%;
+}
+
+#single-product .single-product-image-group .small-image-wrapper {
+  cursor: pointer;
+}
+#single-product .single-product-image-group .small-image-wrapper img {
+  width: 98%;
+}
+
+.single-title-desc {
+  width: 50%;
+  margin-left: 50px;
+}
+.single-small-title {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+.single-big-title {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+.single-title-desc select {
+  margin-top: 20px;
+  padding: 5px;
+  outline: none;
+}
+
+.inputBtn input {
+  height: 40px;
+  margin-top: 20px;
+  margin-right: 20px;
+  width: 50px;
+  outline: none;
+}
+.inputBtn button {
+  background: #088178;
+  color: #fff;
+}
+
+.single-title-desc h3 {
+  margin-top: 30px;
+}
+
+.single-title-desc p {
+  word-spacing: 30px;
+  letter-spacing: 5px;
 }
 
 @media only screen and (max-width: 799px) {
@@ -488,6 +570,23 @@ footer img {
   #newsletter .form {
     width: 70%;
   }
+  /* Single page */
+  #single-product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .section-p1 {
+    padding: 10px 20px;
+  }
+  #single-product .single-product-image-wrapper {
+    width: 70%;
+  }
+  .single-title-desc {
+    width: 80%;
+    margin-left: 0px;
+  }
   @media only screen and (max-width: 499px) {
     h2 {
       font-size: 32px;
@@ -515,6 +614,17 @@ footer img {
     }
     #newsletter .form {
       width: 100%;
+    }
+    /* Single page */
+    .section-p1 {
+      padding: 5px 10px;
+    }
+    #single-product .single-product-image-wrapper {
+      width: 90%;
+    }
+    .single-title-desc {
+      width: 94%;
+      margin-left: 0px;
     }
   }
 }

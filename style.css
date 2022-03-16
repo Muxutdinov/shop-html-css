@@ -594,6 +594,65 @@ footer img {
   top: -45px;
   z-index: -9;
 }
+
+/* About page */
+
+#about-hero {
+  background-image: url(./imges/about/banner.png);
+  background-size: cover;
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#about-hero h2,
+#about-hero p {
+  color: #fff;
+}
+#about {
+  display: flex;
+  padding: 50px;
+  justify-content: space-between;
+}
+
+#about .aboutimgWrapper {
+  width: 50%;
+}
+
+#about .aboutimgWrapper img {
+  border-radius: 4px;
+  width: 100%;
+}
+
+#about .aboutdeatels {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  width: 50%;
+  padding-left: 50px;
+}
+/* Vvvvvvvvideo */
+#about-video {
+text-align: center;
+}
+
+#about-video .WrapperVideo {
+  width: 100%;
+  height: 100%;
+}
+#about-video .WrapperVideo video {
+  width: 70%;
+  border-radius: 20px;
+}
+
+#contact{
+  
+}
+
 @media only screen and (max-width: 799px) {
   #navbar {
     display: none;
@@ -647,6 +706,23 @@ footer img {
     position: relative;
     margin: 50px 10px 20px 10px;
   }
+  /* About page */
+  #about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+  #about .aboutimgWrapper {
+    width: 100%;
+  }
+  #about .aboutdeatels {
+    width: 100%;
+    padding-left: 0px;
+  }
+  #about-video .WrapperVideo video {
+    width: 93%;
+  }
   @media only screen and (max-width: 499px) {
     h2 {
       font-size: 32px;
@@ -686,6 +762,7 @@ footer img {
       width: 94%;
       margin-left: 0px;
     }
+    /* Blog page */
     #blogs .blog-box {
       display: flex;
       flex-direction: column;
@@ -697,10 +774,9 @@ footer img {
     #blogs .blog-box .blog-deatels {
       width: 90%;
     }
-    #blogs .blog-box .imgWrapper img {
-      height: 300px;
-      width: 150%;
-      margin-left: -30px;
+    #blogs .blog-box .imgWrapper {
+      width: 90%;
+      margin-right: 0px;
     }
   }
 }

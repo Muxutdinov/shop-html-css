@@ -739,6 +739,95 @@ footer img {
   font-weight: 700;
 }
 
+/* Cart page */
+#cart {
+  overflow-x: auto;
+}
+#cart table {
+  overflow-x: visible;
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  white-space: nowrap;
+}
+
+#cart table img {
+  width: 70px;
+}
+
+#cart table td:nth-child(1) {
+  width: 100px;
+  text-align: center;
+}
+#cart table td:nth-child(2) {
+  width: 150px;
+  text-align: center;
+}
+#cart table td:nth-child(3) {
+  width: 250px;
+  text-align: center;
+}
+#cart table td:nth-child(4),
+#cart table td:nth-child(5),
+#cart table td:nth-child(6) {
+  width: 150px;
+  text-align: center;
+}
+
+#cart table td:nth-child(5) input {
+  width: 70px;
+  padding: 10px 0px 10px 5px;
+}
+#cart table thead {
+  border: 1px solid #c6cef0;
+  border-right: none;
+  border-left: none;
+}
+#cart table thead td {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 13px;
+  padding: 13px 0px 13px 0px;
+}
+#cart table tbody td {
+  padding-top: 15px;
+}
+
+#coupon {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#coupon .coupon-form {
+  width: 50%;
+}
+#coupon .coupon-form h3,
+#coupon .coupon-table table h3 {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+#coupon .coupon-form input {
+  width: 60%;
+  padding: 13px 5px;
+  outline: none;
+}
+#coupon .coupon-form button {
+  background: #088178;
+  color: #fff;
+}
+#coupon .coupon-table {
+  border: 1px solid #c6cef0;
+  padding: 50px;
+}
+#coupon .coupon-table table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #c6cef0;
+}
+#coupon .coupon-table table td {
+  padding: 15px;
+  border: 1px solid #d8dce7;
+}
 @media screen and (max-width: 900px) {
   #contact {
     display: flex;
@@ -762,8 +851,8 @@ footer img {
     width: 100%;
   }
   #contact-form .contact-form-deteals {
-   margin-top: 180px;
-}
+    margin-top: 180px;
+  }
 }
 
 @media only screen and (max-width: 799px) {
@@ -835,6 +924,18 @@ footer img {
   }
   #about-video .WrapperVideo video {
     width: 93%;
+  }
+  #coupon {
+    flex-direction: column;
+  }
+  #coupon .coupon-form {
+     width: 100%;
+     margin-bottom: 30px;
+   } 
+  #coupon .coupon-form input {
+    width: 60%;
+    padding: 13px 5px;
+    outline: none;
   }
 }
 @media only screen and (max-width: 499px) {

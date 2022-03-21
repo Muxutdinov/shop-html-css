@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: initial;
 }
 h1 {
   font-size: 50px;
@@ -72,7 +72,7 @@ button.white {
   position: sticky;
   top: 0;
 }
-#bar {
+.bar {
   display: none;
 }
 #mobile {
@@ -856,10 +856,23 @@ footer img {
 }
 
 @media only screen and (max-width: 799px) {
+  #pagination {
+    padding: 50px;
+  }
+  #header {
+    padding: 20px 20px;
+  }
+  #hero {
+    padding: 0px 0px;
+  }
   #navbar {
     display: none;
   }
-  #bar {
+  .barWrapper {
+    display: flex;
+  }
+  .bar {
+    padding: 10px;
     display: flex;
   }
   #hero {
@@ -948,7 +961,7 @@ footer img {
     color: #222;
   }
   h1 {
-    font-size: 42px;
+    font-size: 32px;
     line-height: 45px;
     color: #222;
   }
@@ -960,14 +973,16 @@ footer img {
   .section-p1 {
     padding: 10px 20px;
   }
+
   #banner3 {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    padding: 0 40px;
+    padding: 0 0;
   }
   #newsletter .form {
     width: 100%;
+    padding: 20px;
   }
   /* Single page */
   .section-p1 {
